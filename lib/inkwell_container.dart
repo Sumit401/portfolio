@@ -12,16 +12,27 @@ Widget inkwell_contact(String string){
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Icon(string== "8210794699" ?FontAwesomeIcons.phone : FontAwesomeIcons.envelopeOpen,color: Colors.white,size: 18,),
-            const VerticalDivider(width: 10,),
-            Text(string,style: const TextStyle(fontSize: 18,fontWeight: FontWeight.w700,color: Colors.white),overflow: TextOverflow.ellipsis),
-
+            Icon( string == "8210794699" ? FontAwesomeIcons.phone : FontAwesomeIcons.envelopeOpen,
+              color: Colors.white, size: 18,),
+            const VerticalDivider(width: 10),
+            Text(string,
+                style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white),
+                overflow: TextOverflow.ellipsis),
           ],
         ),
       ),
       onTap:() async {
+        if(string== "8210794699") {
           String whatsapp = "tel:8210794699";
           await launchUrlString(whatsapp, mode: LaunchMode.externalApplication);
+        }
+        else{
+          String mail = "mailto:sumitsinha401@gmail.com";
+          await launchUrlString(mail, mode: LaunchMode.externalApplication);
+        }
 
       }
   );
