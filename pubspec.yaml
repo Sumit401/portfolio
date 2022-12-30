@@ -84,6 +84,10 @@ flutter:
     - family: NishikiTeki-MVxaJ
       fonts:
         - asset: fonts/NishikiTeki-MVxaJ.ttf
+
+    - family: SparkyStones
+      fonts:
+          - asset: fonts/SparkyStones.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

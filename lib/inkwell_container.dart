@@ -8,9 +8,8 @@ Widget inkwell_contact(String string){
   return InkWell(
       child: Container(
         margin: const EdgeInsets.only(top: 20),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        child: Wrap(
+          direction: Axis.horizontal,
           children: [
             Icon( string == "8210794699" ? FontAwesomeIcons.phone : FontAwesomeIcons.envelopeOpen,
               color: Colors.white, size: 18,),

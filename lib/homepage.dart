@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/cross_platform.dart';
 import 'package:portfolio/image_container.dart';
 import 'package:portfolio/inkwell_container.dart';
-import 'package:portfolio/proficiencies.dart';
+import 'package:portfolio/skills_container.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -30,7 +30,7 @@ class _HomepageState extends State<Homepage> {
                       Colors.purpleAccent, Colors.blueAccent, Colors.blue,
                     ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
                     height: 600,
-                    width: MediaQuery.of(context).size.width / 2,
+                    width: MediaQuery.of(context).size.width / 2-2,
                     //color: Colors.deepPurple,
                     alignment: Alignment.center,
                     child: Column(
@@ -47,7 +47,7 @@ class _HomepageState extends State<Homepage> {
                         ),
                         Container(
                           margin: const EdgeInsets.only(top: 10),
-                          child: const Text("Flutter Cross-Platform Developer",
+                          child: const Text("Flutter Cross - Platform Developer",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w700,
@@ -56,8 +56,8 @@ class _HomepageState extends State<Homepage> {
                         ),
                         Container(
                           margin: const EdgeInsets.only(top: 20),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                          child: Wrap(
+                            direction: Axis.horizontal,
                             children: const [
                               Icon(FontAwesomeIcons.locationDot,
                                   color: Colors.white, size: 18),
@@ -69,7 +69,7 @@ class _HomepageState extends State<Homepage> {
                                       color: Colors.white,
                                       fontWeight: FontWeight.w600,
                                       fontSize: 18,
-                                      letterSpacing: 0.7)),
+                                      letterSpacing: 0.7),overflow: TextOverflow.ellipsis),
                             ],
                           ),
                         ),
@@ -91,12 +91,13 @@ class _HomepageState extends State<Homepage> {
                         )
                       ],
                     )),
+                Container(color: Colors.black,height: 600, width: 2),
                 Container(
+                  color:  Colors.black45,
                     height: 600,
-                    width: MediaQuery.of(context).size.width / 2,
-                    color: Colors.cyan,
+                    width: MediaQuery.of(context).size.width / 2-2,
                     alignment: Alignment.center,
-                  child:proficiency_icons()
+                  child: skills_container()
                 ),
               ],
             ),
@@ -104,13 +105,23 @@ class _HomepageState extends State<Homepage> {
             Container(
               margin: const EdgeInsets.only(top: 20,bottom: 10),
               alignment: Alignment.center,
-              child: const Text("Proficiencies",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,fontFamily: 'NishikiTeki-MVxaJ',letterSpacing: 1)),
+              child: const Text("Proficiencies",
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'NishikiTeki-MVxaJ',
+                      letterSpacing: 1)),
             ),
             Container(
               margin: const EdgeInsets.only(bottom: 10,top: 10),
               child: crossplatform_container()
             ),
-            Container(width: MediaQuery.of(context).size.width,height: 3,color: Colors.black,margin: const EdgeInsets.symmetric(vertical: 10),),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 3,
+              color: Colors.black,
+              margin: const EdgeInsets.symmetric(vertical: 10),
+            ),
             Column(
               children: [
                 Container(
@@ -120,7 +131,8 @@ class _HomepageState extends State<Homepage> {
                           fontSize: 35,
                           color: Colors.black,
                           fontWeight: FontWeight.bold,fontFamily: 'Aloevera',letterSpacing: 1.5)),
-                )
+                ),
+                
               ],
             )
           ],
