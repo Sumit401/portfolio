@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/cross_platform.dart';
 import 'package:portfolio/image_container.dart';
 import 'package:portfolio/inkwell_container.dart';
+import 'package:portfolio/projects.dart';
 import 'package:portfolio/skills_container.dart';
 
 class Homepage extends StatefulWidget {
@@ -132,7 +133,16 @@ class _HomepageState extends State<Homepage> {
                           color: Colors.black,
                           fontWeight: FontWeight.bold,fontFamily: 'Aloevera',letterSpacing: 1.5)),
                 ),
-                
+                Wrap(
+                  alignment: WrapAlignment.spaceEvenly,
+                  spacing: 20,
+                  runSpacing: 20,
+                  children: [
+                    Scientific_calculator(),
+                    go_grocery(),
+                    blogging_system(),
+                  ],
+                )
               ],
             )
           ],
