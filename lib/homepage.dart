@@ -141,6 +141,7 @@ class _HomepageState extends State<Homepage> {
                     Scientific_calculator(),
                     go_grocery(),
                     blogging_system(),
+                    vehicle_rental(),
                   ],
                 )
               ],
