@@ -138,10 +138,11 @@ class _HomepageState extends State<Homepage> {
                   spacing: 20,
                   runSpacing: 20,
                   children: [
-                    Scientific_calculator(),
                     go_grocery(),
-                    blogging_system(),
+                    Scientific_calculator(),
                     vehicle_rental(),
+                    schoolbus_track(),
+                    blogging_system(),
                   ],
                 )
               ],
