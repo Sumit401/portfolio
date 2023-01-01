@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio/Responsive.dart';
 import 'package:portfolio/cross_platform.dart';
 import 'package:portfolio/image_container.dart';
 import 'package:portfolio/inkwell_container.dart';
@@ -21,8 +22,9 @@ class _HomepageState extends State<Homepage> {
       body:SingleChildScrollView(
         child: Column(
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly ,
+            Wrap(
+              alignment: WrapAlignment.spaceEvenly,
+              //direction: Axis.horizontal,
               children: [
                 Container(
                     decoration: const BoxDecoration(
@@ -31,7 +33,7 @@ class _HomepageState extends State<Homepage> {
                       Colors.purpleAccent, Colors.blueAccent, Colors.blue,
                     ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
                     height: 600,
-                    width: MediaQuery.of(context).size.width / 2-2,
+                    width: ResponsiveWidget.isSmallScreen(context) ? MediaQuery.of(context).size.width : MediaQuery.of(context).size.width/2-2,
                     //color: Colors.deepPurple,
                     alignment: Alignment.center,
                     child: Column(
@@ -92,11 +94,11 @@ class _HomepageState extends State<Homepage> {
                         )
                       ],
                     )),
-                Container(color: Colors.black,height: 600, width: 2),
+                ResponsiveWidget.isSmallScreen(context) ? Container(color: Colors.black,height: 2, width: MediaQuery.of(context).size.width) : Container(color: Colors.black,height: 600, width: 2) ,
                 Container(
                   color:  Colors.black45,
                     height: 600,
-                    width: MediaQuery.of(context).size.width / 2-2,
+                    width: ResponsiveWidget.isSmallScreen(context) ? MediaQuery.of(context).size.width : MediaQuery.of(context).size.width/2-2,
                     alignment: Alignment.center,
                   child: skills_container()
                 ),

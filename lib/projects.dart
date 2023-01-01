@@ -232,8 +232,8 @@ Widget blogging_system() {
               children: [
                 OutlinedButton(
                     onPressed: () async {
-                      String view_project = "https://github.com/Sumit401/Online-Blogging-System";
-                      await launchUrlString(view_project,mode: LaunchMode.externalApplication);
+                      String viewProject = "https://github.com/Sumit401/Online-Blogging-System";
+                      await launchUrlString(viewProject,mode: LaunchMode.externalApplication);
                     },
                     style: ButtonStyle(
                         side: const MaterialStatePropertyAll(BorderSide(color: Colors.deepPurple)),
@@ -314,8 +314,8 @@ Widget vehicle_rental() {
               children: [
                 OutlinedButton(
                     onPressed: () async {
-                      String url_launch= "https://github.com/Sumit401/Bike_Rental";
-                      await launchUrlString(url_launch,mode: LaunchMode.externalApplication);
+                      String urlLaunch= "https://github.com/Sumit401/Bike_Rental";
+                      await launchUrlString(urlLaunch,mode: LaunchMode.externalApplication);
                     },
                     style: ButtonStyle(
                         side: const MaterialStatePropertyAll(BorderSide(color: Colors.deepPurple)),
@@ -397,8 +397,8 @@ Widget schoolbus_track() {
               children: [
                 OutlinedButton(
                     onPressed: () async {
-                      String url_launch= "https://github.com/Sumit401/School_Bus_Track";
-                      await launchUrlString(url_launch,mode: LaunchMode.externalApplication);
+                      String urlLaunch= "https://github.com/Sumit401/School_Bus_Track";
+                      await launchUrlString(urlLaunch,mode: LaunchMode.externalApplication);
                     },
                     style: ButtonStyle(
                         side: const MaterialStatePropertyAll(BorderSide(color: Colors.deepPurple)),
