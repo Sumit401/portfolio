@@ -8,6 +8,8 @@ Widget crossplatform_container(){
         margin: EdgeInsets.symmetric(horizontal:10),
         child: Wrap(
           direction: Axis.horizontal,
+          alignment: WrapAlignment.spaceEvenly,
+          runAlignment: WrapAlignment.spaceEvenly,
           children: [
             Container(padding: const EdgeInsets.symmetric(horizontal: 20),child: Image.asset("assets/images/android2.png",width: 100,height: 100,)),
             Container(padding: const EdgeInsets.symmetric(horizontal: 20),child: Image.asset("assets/images/ios.png",width: 100,height: 100,)),

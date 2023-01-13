@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio/Responsive.dart';
-import 'package:portfolio/cross_platform.dart';
-import 'package:portfolio/image_container.dart';
-import 'package:portfolio/inkwell_container.dart';
-import 'package:portfolio/projects.dart';
-import 'package:portfolio/skills_container.dart';
+import 'package:portfolio/projects/QuizApp.dart';
+import 'Responsive.dart';
+import 'cross_platform.dart';
+import 'image_container.dart';
+import 'inkwell_container.dart';
+import 'projects/blogging System.dart';
+import 'projects/goGrocery.dart';
+import 'projects/schoolBusTrack.dart';
+import 'projects/scientificCalcFlutter.dart';
+import 'projects/vehicleRental.dart';
+import 'skills_container.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -140,6 +145,7 @@ class _HomepageState extends State<Homepage> {
                   spacing: 20,
                   runSpacing: 20,
                   children: [
+                    quizApp(),
                     go_grocery(),
                     Scientific_calculator(),
                     vehicle_rental(),
