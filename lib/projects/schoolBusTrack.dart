@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constant/fileURL.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+
+import 'styles.dart';
 
 
 Widget schoolbus_track() {
   return SizedBox(
     width: 430,
-    height: 450,
+    height: 460,
     child: Card(
       elevation: 20,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -14,66 +17,18 @@ Widget schoolbus_track() {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Container(
-                decoration: BoxDecoration(
-                    border: Border.all( width: 2),
-                    shape: BoxShape.rectangle),
-                margin: const EdgeInsets.only(bottom: 10, top: 10),
-                child: Image.asset(
-                  "assets/images/projectImages/bus_track.png",
-                  width: 300,
-                  height: 200,
-                  fit: BoxFit.fill,
-                )),
-            Container(
-              margin: const EdgeInsets.only(bottom: 10, top: 10),
-              child: const Text(
-                  "School Bus Tracking and Reciever Application in Android",
-                  textAlign: TextAlign.center,
-                  style:
-                  TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            ),
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset("assets/images/android2.png",height: 50,width: 70,),
-                  Image.asset("assets/images/java2.png",height: 50,width: 70,),
-                ],
-              ),
-            ),
+            projectImageSchoolBus(),
+            projectNameSchoolBus(),
+            projectSkillsSchoolBus(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 OutlinedButton(
                     onPressed: () async {
-                      String urlLaunch= "https://github.com/Sumit401/School_Bus_Track";
-                      await launchUrlString(urlLaunch,mode: LaunchMode.externalApplication);
+                      await launchUrlString(schoolBusTrackGit,mode: LaunchMode.externalApplication);
                     },
-                    style: ButtonStyle(
-                        side: const MaterialStatePropertyAll(BorderSide(color: Colors.deepPurple)),
-                        shape: MaterialStatePropertyAll(
-                            RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)))),
-                    child: const Text("View on Github",
-                        style: TextStyle(
-                            color: Colors.deepPurple,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w300))),
-                /*const VerticalDivider(width: 10),
-                OutlinedButton(
-                    onPressed: () => null,
-                    style: ButtonStyle(
-                        side: const MaterialStatePropertyAll(BorderSide(color: Colors.deepPurple)),
-                        shape: MaterialStatePropertyAll(
-                            RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)))),
-                    child: const Text("View on Github",
-                        style: TextStyle(
-                            color: Colors.deepPurple,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w300))),*/
+                    style: buttonStyle(),
+                    child: buttonText("View on Github")),
               ],
             ),
           ],
@@ -81,4 +36,42 @@ Widget schoolbus_track() {
       ),
     ),
   );
+}
+
+projectSkillsSchoolBus() {
+  return Container(
+    margin: const EdgeInsets.symmetric(vertical: 10),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset(androidImage,height: 50,width: 70,),
+        Image.asset(javaImage,height: 50,width: 70,),
+      ],
+    ),
+  );
+}
+
+projectNameSchoolBus() {
+  return Container(
+    margin: const EdgeInsets.only(bottom: 10, top: 10),
+    child: const Text(
+        "School Bus Tracking Application in Android",
+        textAlign: TextAlign.center,
+        style:
+        TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+  );
+}
+
+projectImageSchoolBus() {
+  return Container(
+      decoration: BoxDecoration(
+          border: Border.all( width: 2),
+          shape: BoxShape.rectangle),
+      margin: const EdgeInsets.only(bottom: 10, top: 10),
+      child: Image.asset(
+        schoolBusTrackImage,
+        width: 300,
+        height: 200,
+        fit: BoxFit.fill,
+      ));
 }
