@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
+import 'constant/fileURL.dart';
+
 Widget profileimage_container(){
   return Container(
       decoration: BoxDecoration(
@@ -68,8 +70,7 @@ Widget resume_image(){
           ],
         ),
         onTap: () async{
-          String stack = "https://drive.google.com/file/d/17qoX192OcoHjqxhDQbLSsmNzuBAjVbGa/view?usp=sharing";
-          await launchUrlString(stack);
+          await launchUrlString(resume);
         },
       ),
           );

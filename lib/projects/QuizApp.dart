@@ -8,7 +8,7 @@ import 'styles.dart';
 Widget quizApp() {
   return SizedBox(
     width: 430,
-    height: 460,
+    height: 500,
     child: Card(
       elevation: 20,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -21,9 +21,10 @@ Widget quizApp() {
             projectNameQuiz(),
             projectSkillsQuiz(),
             Wrap(
+              direction: Axis.horizontal,
               alignment: WrapAlignment.spaceEvenly,
               spacing: 20,
-              runSpacing: 20,
+              runSpacing: 10,
               children: [
                 OutlinedButton(
                     onPressed: () async {

@@ -46,23 +46,26 @@ class Homepage extends StatelessWidget {
               color: Colors.black,
               margin: const EdgeInsets.symmetric(vertical: 10),
             ),
-            Column(
-              children: [
-                projectHeading(),
-                Wrap(
-                  alignment: WrapAlignment.spaceEvenly,
-                  spacing: 20,
-                  runSpacing: 20,
-                  children: [
-                    quizApp(),
-                    go_grocery(),
-                    Scientific_calculator(),
-                    vehicle_rental(),
-                    schoolbus_track(),
-                    blogging_system(),
-                  ],
-                )
-              ],
+            Container(
+              margin: const EdgeInsets.only(bottom: 50),
+              child: Column(
+                children: [
+                  projectHeading(),
+                  Wrap(
+                    alignment: WrapAlignment.spaceEvenly,
+                    spacing: 20,
+                    runSpacing: 20,
+                    children: [
+                      quizApp(),
+                      go_grocery(),
+                      Scientific_calculator(),
+                      vehicle_rental(),
+                      schoolbus_track(),
+                      blogging_system(),
+                    ],
+                  ),
+                ],
+              ),
             )
           ],
         ),

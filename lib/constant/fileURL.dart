@@ -26,7 +26,7 @@ const String mySqlImage = "assets/images/mysql.png";
 const String androidImage = "assets/images/android2.png";
 const String flutterImage = "assets/images/flutter3.png";
 const String firebaseImage = "assets/images/firebase.png";
-const String javaImage = "assets/images/flutter3.png";
+const String javaImage = "assets/images/java2.png";
 
 
 // Image path for Projects................
@@ -37,3 +37,6 @@ const String quizAppImage = "assets/images/projectImages/quizApp.jpg";
 const String schoolBusTrackImage = "assets/images/projectImages/bus_track.png";
 const String vehicleRentalImage = "assets/images/projectImages/vehicle_rental.png";
 const String scientificCalcImage = "assets/images/projectImages/calculator_project.png";
+
+// URL for my Website and Resume
+String resume = "https://drive.google.com/file/d/17qoX192OcoHjqxhDQbLSsmNzuBAjVbGa/view?usp=sharing";

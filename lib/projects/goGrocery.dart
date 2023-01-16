@@ -8,7 +8,7 @@ import 'styles.dart';
 Widget go_grocery() {
   return SizedBox(
     width: 430,
-    height: 460,
+    height: 500,
     child: Card(
       elevation: 20,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),

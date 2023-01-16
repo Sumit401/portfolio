@@ -7,7 +7,7 @@ import 'styles.dart';
 Widget Scientific_calculator() {
   return SizedBox(
     width: 430,
-    height: 460,
+    height: 500,
     child: Card(
       elevation: 20,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
@@ -22,7 +22,7 @@ Widget Scientific_calculator() {
             Wrap(
               alignment: WrapAlignment.spaceEvenly,
               spacing: 20,
-              runSpacing: 20,
+              runSpacing: 10,
               children: [
                 OutlinedButton(
                     onPressed: () async {
