@@ -9,6 +9,7 @@ import 'projects/goGrocery.dart';
 import 'projects/schoolBusTrack.dart';
 import 'projects/scientificCalcFlutter.dart';
 import 'projects/vehicleRental.dart';
+import 'projects/weatherApp.dart';
 import 'skills_container.dart';
 
 class Homepage extends StatelessWidget {
@@ -57,6 +58,7 @@ class Homepage extends StatelessWidget {
                     runSpacing: 20,
                     children: [
                       quizApp(),
+                      weatherApp(),
                       go_grocery(),
                       Scientific_calculator(),
                       vehicle_rental(),
