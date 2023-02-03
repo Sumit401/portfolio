@@ -26,21 +26,15 @@ Widget weatherApp(){
               runSpacing: 10,
               children: [
                 OutlinedButton(
-                    onPressed: () async {
-                      await launchUrlString(quizAppWebView, mode: LaunchMode.externalApplication);
-                    },
-                    style: buttonStyle(),
-                    child: buttonText("View Project")),
-                OutlinedButton(
                     onPressed: () async{
-                      await launchUrlString(quizAppApk, mode: LaunchMode.externalApplication);
+                      await launchUrlString(weatherAppApk, mode: LaunchMode.externalApplication);
                     },
                     style: buttonStyle(),
                     child: buttonText("Download Apk")),
                 const VerticalDivider(width: 10),
                 OutlinedButton(
                     onPressed: () async {
-                      await launchUrlString(quizAppGit, mode: LaunchMode.externalApplication);
+                      await launchUrlString(weatherAppGit, mode: LaunchMode.externalApplication);
                     },
                     style: buttonStyle(),
                     child: buttonText("View on Github")),
@@ -69,8 +63,8 @@ projectImageWeather() {
           border: Border.all( width: 2),
           shape: BoxShape.rectangle),
       margin: const EdgeInsets.only(bottom: 10, top: 10),
-      child: Image.asset(quizAppImage,
-        width: 300,
+      child: Image.asset(weatherAppImage,
+        width: 250,
         height: 200,
         fit: BoxFit.fill,
       ));
