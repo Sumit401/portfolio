@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'cross_platform.dart';
 
-profeciencyContainerTitle() {
+proficiencyContainerTitle() {
   return Container(
     margin: const EdgeInsets.only(top: 20,bottom: 10),
     alignment: Alignment.center,

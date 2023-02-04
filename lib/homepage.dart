@@ -39,7 +39,7 @@ class Homepage extends StatelessWidget {
             ),
             // Horizontal Line
             Container(width: MediaQuery.of(context).size.width,height: 3,color: Colors.black,),
-            profeciencyContainerTitle(),
+            proficiencyContainerTitle(),
             proficiencyContainer(),
             Container(
               width: MediaQuery.of(context).size.width,
