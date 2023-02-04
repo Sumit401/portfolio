@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-Widget crossplatform_container(){
+Widget crossPlatformContainer(){
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Container(
-        margin: EdgeInsets.symmetric(horizontal:10),
+        margin: const EdgeInsets.symmetric(horizontal:10),
         child: Wrap(
           direction: Axis.horizontal,
           alignment: WrapAlignment.spaceEvenly,
