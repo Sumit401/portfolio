@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'cross_platform.dart';
+import 'crossPlatform.dart';
 
 proficiencyContainerTitle() {
   return Container(
