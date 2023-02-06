@@ -58,8 +58,8 @@ class Homepage extends StatelessWidget {
                     runSpacing: 20,
                     children: [
                       quizApp(),
-                      weatherApp(),
                       go_grocery(),
+                      weatherApp(),
                       Scientific_calculator(),
                       vehicle_rental(),
                       schoolbus_track(),
