@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 import '../constant/fileURL.dart';
 import 'styles.dart';
 
-Widget vehicle_rental() {
+Widget vehicleRental() {
   return SizedBox(
     width: 430,
     height: 500,

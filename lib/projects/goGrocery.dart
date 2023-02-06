@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher_string.dart';
 
 import 'styles.dart';
 
-Widget go_grocery() {
+Widget goGrocery() {
   return SizedBox(
     width: 430,
     height: 500,
